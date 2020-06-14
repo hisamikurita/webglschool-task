@@ -25,13 +25,13 @@ window.addEventListener('load', () => {
     })
 
     //頂点シェーダーを最初に読み込む
-    shaderLoadFile('../shader/main.vert')
+    shaderLoadFile('/task_4/shader/main.vert')
         //thenの引数に戻り値が返ってくる。
         //vertexShaderSourceに頂点シェーダのソースコードが入っている
         .then((vertexShaderSource) => {
             vs = createShaderObject(vertexShaderSource, gl.VERTEX_SHADER);
             //次にフラグメントシェーダーを読み込む
-            return shaderLoadFile('../shader/main.frag');
+            return shaderLoadFile('/task_4/shader/main.frag');
         })
         //fragmentShaderSourceにフラグメントシェーダのソースコードが入っている
         .then((fragmentShaderSource) => {
