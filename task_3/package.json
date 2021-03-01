@@ -12,7 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "three": "^0.116.1",
+    "three": "^0.125.0",
     "three-orbitcontrols": "^2.110.3"
   }
 }
